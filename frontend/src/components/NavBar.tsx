@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -38,7 +39,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <span>
@@ -91,14 +92,16 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <Typography
-                key={page}
+              <Link
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block", flex: 1 }}
-                variant="h6"
+                key={page}
+                href="#"
               >
-                {page}
-              </Typography>
+                <Typography className="link-glow" variant="h6">
+                  {page}
+                </Typography>
+              </Link>
             ))}
             {<CButton />}
           </Box>
