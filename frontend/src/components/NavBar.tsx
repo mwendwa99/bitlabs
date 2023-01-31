@@ -87,16 +87,18 @@ function ResponsiveAppBar() {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
+              alignItems: "center",
             }}
           >
             {pages.map((page) => (
-              <Button
+              <Typography
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", flex: 1 }}
+                sx={{ my: 2, display: "block", flex: 1 }}
+                variant="h6"
               >
                 {page}
-              </Button>
+              </Typography>
             ))}
             {<CButton />}
           </Box>
