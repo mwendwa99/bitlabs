@@ -8,10 +8,9 @@ import Link from "@mui/material/Link";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-import CButton from "./Button";
+import { Button } from ".";
 import logo from "../assets/logo.svg";
 
 const pages = ["Home", "What We Do", "Pricing", "Our Services"];
@@ -103,7 +102,7 @@ function ResponsiveAppBar() {
                 </Typography>
               </Link>
             ))}
-            {<CButton />}
+            {<Button variant="contained" text="Call Us" color="secondary" />}
           </Box>
         </Toolbar>
       </Container>

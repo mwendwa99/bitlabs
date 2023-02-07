@@ -1,17 +1,15 @@
 import React from "react";
 import "./App.css";
-import { AppBar, Container } from "./components";
+import { Grid, Typography } from "@mui/material";
+import { AppBar, Button } from "./components";
+import Landing from "./pages/Home/Landing";
+import man from "./assets/man.svg";
 
 function App() {
   return (
     <div className="App">
       <AppBar />
-      <Container>
-        <div className="App-header">
-          <h1>React + TypeScript + Material UI</h1>
-        </div>
-      </Container>
-      <div></div>
+      <Landing />
     </div>
   );
 }

@@ -11,8 +11,8 @@ const SimpleContainer: React.FC<SimpleContainerProps> = ({ children }) => {
   return (
     <React.Fragment>
       <ScopedCssBaseline />
-      <Container maxWidth="md">
-        <Box sx={{ bgcolor: "#cfe8fc", height: "100vh" }}>{children}</Box>
+      <Container maxWidth="lg" sx={{ p: 2 }}>
+        <Box sx={{ height: "100vh" }}>{children}</Box>
       </Container>
     </React.Fragment>
   );
