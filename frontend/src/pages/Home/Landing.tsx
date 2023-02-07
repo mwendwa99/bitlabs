@@ -1,6 +1,6 @@
 import { FC } from "react";
 import React from "react";
-import { Container, Button, Section } from "../../components";
+import { Container, Button, Section, Modal } from "../../components";
 import man from "../../assets/man.svg";
 
 let sections = [
@@ -30,6 +30,7 @@ let sections = [
 const Landing: React.FC = () => {
   return (
     <Container>
+      <Modal />
       <Section data={sections} />
     </Container>
   );
