@@ -100,9 +100,10 @@ export const theme = createTheme({
           },
         },
         containedPrimary: {
-          backgroundColor: "#3F51B5",
+          width: "150px",
+          backgroundColor: "#01244C",
           "&:hover": {
-            backgroundColor: "#3F51B5",
+            backgroundColor: "#01244C",
           },
         },
         containedSecondary: {

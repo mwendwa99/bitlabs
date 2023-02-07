@@ -13,7 +13,7 @@ let sections = [
       alt: "bitlabs",
       boolean: true,
     },
-    button: <Button variant="contained" text="Click Me" color="secondary" />,
+    button: <Button variant="contained" text="Get Started" color="primary" />,
   },
   {
     title: "Section 2",
