@@ -41,20 +41,34 @@ const InteractiveList: React.FC<ListItemProps> = ({ data }) => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={12}>
           {data.map((item, index) => (
-            <Box key={index}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-                {item.title}
-              </Typography>
-              <ListItem>
+            <Box sx={{ m: 1 }} key={index}>
+              <ListItem alignItems="flex-start">
                 <ListItemIcon>
                   <img
                     src={item.icon}
                     width={"100%"}
                     height={"100%"}
                     alt="icon"
+                    style={{ maxWidth: "50px" }}
                   />
                 </ListItemIcon>
-                <ListItemText primary={item.description} />
+                <ListItemText
+                  primary={
+                    <Typography
+                      gutterBottom
+                      align="left"
+                      variant="h6"
+                      component="div"
+                    >
+                      {item.title}
+                    </Typography>
+                  }
+                  secondary={
+                    <Typography align="left" variant="body1" component="div">
+                      {item.description}
+                    </Typography>
+                  }
+                />
               </ListItem>
             </Box>
           ))}

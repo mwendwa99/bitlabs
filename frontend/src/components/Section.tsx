@@ -20,6 +20,7 @@ const gridStyle = {
   justifyContent: "center",
   alignItems: { xs: "center", md: "flex-start" },
   flexDirection: "column",
+  p: { xs: 2, md: 0 },
 };
 
 const paperStyle = {
@@ -27,7 +28,8 @@ const paperStyle = {
 };
 
 const typographyStyle = {
-  textAlign: { xs: "center", md: "left" },
+  textAlign: { xs: "flex-start", md: "left" },
+  fontWeight: { xs: 600 },
 };
 
 const Section: React.FC<SectionProps> = ({ data }) => {
@@ -51,7 +53,7 @@ const Section: React.FC<SectionProps> = ({ data }) => {
                 sx={typographyStyle}
                 gutterBottom
                 align="left"
-                variant="h5"
+                variant="h6"
               >
                 {item.description}
               </Typography>

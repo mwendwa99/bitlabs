@@ -1,9 +1,14 @@
-:root {
-  font-family: "Ubuntu", sans-serif;
+html {
+  height: 100%;
+  background: linear-gradient(180.96deg, #e1bcce 0.82%, #becbf0 150.63%),
+    repeating-linear-gradient(180.96deg, #f5f6f5 0.82%, #8f9cc1 150.63%);
+  /* background: linear-gradient(180.96deg, #e1bcce 0.82%, #becbf0 150.63%); */
 
-  /* background: linear-gradient(180.96deg, #f5f6f5 0.82%, #8f9cc1 150.63%); */
-  background: linear-gradient(180.96deg, #e1bcce 0.82%, #becbf0 150.63%);
-
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -13,6 +18,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {

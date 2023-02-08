@@ -83,6 +83,11 @@ export const theme = createTheme({
         },
       },
     },
+    MuiListItemText: {
+      styleOverrides: {
+        primary: {},
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
