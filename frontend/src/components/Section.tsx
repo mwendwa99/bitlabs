@@ -6,10 +6,12 @@ import { Typography, Grid, Box, Paper } from "@mui/material";
 interface SectionProps {
   // create a data prop that is an array of objects
   data: Array<{
+    mdGridType: number;
     title: string;
     description: string;
     image: { src: string; alt: string; boolean: boolean };
     button?: JSX.Element;
+    listComponent?: JSX.Element;
   }>;
 }
 
@@ -33,7 +35,7 @@ const Section: React.FC<SectionProps> = ({ data }) => {
     <Grid container>
       {data.map((item, index) => (
         <React.Fragment key={index}>
-          <Grid sx={gridStyle} item xs={12} md={6}>
+          <Grid sx={gridStyle} item xs={12} md={item.mdGridType}>
             <Paper sx={paperStyle} elevation={0}>
               <Typography
                 sx={typographyStyle}
@@ -56,16 +58,18 @@ const Section: React.FC<SectionProps> = ({ data }) => {
             </Paper>
             {item.button && <Box sx={{ mt: 2 }}>{item.button}</Box>}
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={item.mdGridType}>
             <Box sx={{ p: 2, m: 2 }}>
               <img
                 height="100%"
                 width="100%"
-                // style={{ objectFit: "contain" }}
                 src={item.image["src"]}
                 alt={item.image["alt"]}
               />
             </Box>
+          </Grid>
+          <Grid item xs={12} md={item.mdGridType}>
+            <Box sx={{ p: 2, m: 2 }}>{item.listComponent}</Box>
           </Grid>
         </React.Fragment>
       ))}
