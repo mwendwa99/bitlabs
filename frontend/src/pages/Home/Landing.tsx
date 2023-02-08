@@ -2,7 +2,7 @@ import { FC } from "react";
 import React from "react";
 import { Container, Button, Section, Modal, List } from "../../components";
 import man from "../../assets/man.svg";
-import icons from "../../assets/icons.svg";
+import icons from "../../assets/icons.webp";
 import maintenance from "../../assets/maintenance.svg";
 import test from "../../assets/test.svg";
 import customize from "../../assets/customize.svg";
