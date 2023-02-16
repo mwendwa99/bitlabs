@@ -1,27 +1,14 @@
-import { FC } from "react";
 import React from "react";
+import Clients from "./Clients";
+// components
 import { Container, Button, Section, Modal, List } from "../../components";
+// assets
 import man from "../../assets/man.svg";
 import icons from "../../assets/icons.webp";
 import maintenance from "../../assets/maintenance.svg";
 import test from "../../assets/test.svg";
 import customize from "../../assets/customize.svg";
 import consult from "../../assets/consult.svg";
-
-let section1 = [
-  {
-    mdGridType: 6,
-    title: `Elevate your business with expert software solutions`,
-    description:
-      "Revolutionize your business with BitLabs: expert custom software solutions that drive results",
-    image: {
-      src: man,
-      alt: "bitlabs",
-      boolean: true,
-    },
-    button: <Button variant="contained" text="Get Started" color="primary" />,
-  },
-];
 
 const listArray = [
   {
@@ -49,6 +36,20 @@ const listArray = [
     icon: consult,
   },
 ];
+let section1 = [
+  {
+    mdGridType: 6,
+    title: `Elevate your business with expert software solutions`,
+    description:
+      "Revolutionize your business with BitLabs: expert custom software solutions that drive results",
+    image: {
+      src: man,
+      alt: "bitlabs",
+      boolean: true,
+    },
+    button: <Button variant="contained" text="Get Started" color="primary" />,
+  },
+];
 
 let section2 = [
   {
@@ -71,6 +72,7 @@ const Landing: React.FC = () => {
       <Modal />
       <Section data={section1} />
       <Section data={section2} />
+      <Clients />
     </Container>
   );
 };
