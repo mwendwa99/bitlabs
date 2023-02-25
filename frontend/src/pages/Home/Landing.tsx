@@ -1,5 +1,6 @@
 import React from "react";
 import Clients from "./Clients";
+import { Contact } from "../../components";
 // components
 import { Container, Button, Section, Modal, List } from "../../components";
 // assets
@@ -73,6 +74,7 @@ const Landing: React.FC = () => {
       <Section data={section1} />
       <Section data={section2} />
       <Clients />
+      <Contact />
     </Container>
   );
 };

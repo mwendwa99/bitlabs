@@ -40,8 +40,8 @@ const Clients: React.FC = () => {
         with leading companies in their respective fields.
       </Typography>
       <Grid container spacing={0} sx={{ p: 2, mt: 2 }}>
-        {imageList.map((image) => (
-          <Grid item xs={12} sm={6} md={3}>
+        {imageList.map((image, index) => (
+          <Grid key={index} item xs={12} sm={6} md={3}>
             <img src={image.src} alt={image.alt} />
           </Grid>
         ))}

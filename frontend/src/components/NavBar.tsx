@@ -10,6 +10,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 
+import { Link as RLink } from "react-router-dom";
+
 import { Button } from ".";
 import logo from "../assets/logo.svg";
 
@@ -17,10 +19,12 @@ const pages = ["Home", "What We Do", "Pricing", "Our Services"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] =
-    React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] =
-    React.useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null
+  );
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
+    null
+  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -83,7 +87,16 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    {
+                      // is this the home page?
+                      page === "Home" ? (
+                        <RLink to="/">Home</RLink>
+                      ) : (
+                        <RLink to={`/${page}`}>{page}</RLink>
+                      )
+                    }
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
