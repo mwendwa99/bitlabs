@@ -31,17 +31,17 @@ export const theme = createTheme({
         },
         h2: {
           fontSize: 36,
-          fontWeight: 700,
+          fontWeight: 400,
           lineHeight: 1.2,
         },
         h3: {
           fontSize: 24,
-          fontWeight: 700,
+          fontWeight: 400,
           lineHeight: 1.2,
         },
         h4: {
           fontSize: 18,
-          fontWeight: 700,
+          fontWeight: 400,
           lineHeight: 1.2,
         },
         h5: {
@@ -121,6 +121,38 @@ export const theme = createTheme({
           "&:hover": {
             backgroundColor: "#01244C",
           },
+        },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "#01244C",
+            },
+            "&:hover fieldset": {
+              borderColor: "#01244C",
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "#01244C",
+            },
+            // label
+            "& .MuiInputLabel-outlined": {
+              color: "#01244C",
+            },
+          },
+          // focused label
+          "& .MuiInputLabel-root.Mui-focused": {
+            color: "#01244C",
+          },
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          color: "#01244C",
         },
       },
     },

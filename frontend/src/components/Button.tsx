@@ -6,11 +6,12 @@ interface Props {
   text: string | undefined;
   variant: ButtonProps["variant"];
   color: ButtonProps["color"];
+  action?: () => void;
 }
 
 const BasicButtons: React.FC<Props> = (props) => {
   return (
-    <Button variant={props.variant} color={props.color}>
+    <Button variant={props.variant} color={props.color} onClick={props.action}>
       {props.text}
     </Button>
   );
