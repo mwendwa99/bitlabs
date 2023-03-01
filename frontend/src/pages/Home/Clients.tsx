@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container, Grid } from "@mui/material";
+import { Typography, Container, Grid, Box } from "@mui/material";
 import vcck from "../../assets/clients/vcck.webp";
 import legalcompass from "../../assets/clients/legalcompass.webp";
 import pemter from "../../assets/clients/pemter.webp";

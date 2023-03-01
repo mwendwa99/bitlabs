@@ -25,9 +25,9 @@ const Contact = () => {
   };
 
   return (
-    <Container maxWidth="lg">
-      <Typography variant="h3" gutterBottom>
-        Let's start a project together
+    <Container maxWidth="lg" sx={{ m: 2 }}>
+      <Typography variant="h1" gutterBottom>
+        Let's work together
       </Typography>
       <Typography variant="h4" align="center" gutterBottom>
         We pride ourselves in being trusted and having the opportunity to work
