@@ -7,11 +7,12 @@ interface Props {
   variant: ButtonProps["variant"];
   color: ButtonProps["color"];
   action?: () => void;
+  type?: ButtonProps["type"];
 }
 
 const BasicButtons: React.FC<Props> = (props) => {
   return (
-    <Button variant={props.variant} color={props.color} onClick={props.action}>
+    <Button type={props.type} variant={props.variant} color={props.color} onClick={props.action}>
       {props.text}
     </Button>
   );
