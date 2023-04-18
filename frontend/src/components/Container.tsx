@@ -11,7 +11,7 @@ const SimpleContainer: React.FC<SimpleContainerProps> = ({ children }) => {
   return (
     <React.Fragment>
       <ScopedCssBaseline />
-      <Container maxWidth="lg" sx={{ p: 2 }}>
+      <Container maxWidth="lg" sx={{ p: 2, position: "relative" }}>
         <Box sx={{ height: "100vh" }}>{children}</Box>
       </Container>
     </React.Fragment>
