@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { Link as RLink } from "react-router-dom";
 
-import { Button } from ".";
+import Button from "./Button";
 import logo from "../assets/logo.svg";
 
 const pages = ["Home", "What We Do", "Pricing", "Our Services"];

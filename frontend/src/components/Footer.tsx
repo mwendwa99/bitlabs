@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 
 function Copyright() {
@@ -41,10 +42,78 @@ export default function StickyFooter() {
               : theme.palette.grey[800],
         }}
       >
-        <Container maxWidth="sm">
-          <Typography variant="body1">
-            My sticky footer can be found here.
-          </Typography>
+        <Container maxWidth="lg">
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6} md={3}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: 100,
+                  justifyContent: "center",
+                }}
+              >
+                <Typography variant="h6" gutterBottom>
+                  Heading
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary">
+                  Something here to give the footer a purpose!
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: 100,
+                  justifyContent: "center",
+                }}
+              >
+                <Typography variant="h6" gutterBottom>
+                  Heading
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary">
+                  Something here to give the footer a purpose!
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: 100,
+                  justifyContent: "center",
+                }}
+              >
+                <Typography variant="h6" gutterBottom>
+                  Heading
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary">
+                  Something here to give the footer a purpose!
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: 100,
+                  justifyContent: "center",
+                }}
+              >
+                <Typography variant="h6" gutterBottom>
+                  Heading
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary">
+                  Something here to give the footer a purpose!
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+
           <Copyright />
         </Container>
       </Box>

@@ -5,9 +5,10 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import Container from "@mui/material/Container";
 
 import Contact from "../components/Contact";
-import Container from "../components/Container";
+// import Container from "../components/Container";
 import Button from "../components/Button";
 import List from "../components/List";
 import Modal from "../components/Modal";
@@ -76,24 +77,9 @@ const typographyStyle = {
   fontWeight: { xs: 600 },
 };
 
-const LandingNew = () => {
-  let data = [
-    {
-      mdGridType: 6,
-      title: `Elevate your business with expert software solutions`,
-      description:
-        "Revolutionize your business with BitLabs: expert custom software solutions that drive results",
-      image: {
-        src: man,
-        alt: "bitlabs",
-        boolean: true,
-      },
-      button: <Button variant="contained" text="Get Started" color="primary" />,
-    },
-  ];
-
+const Landing = () => {
   return (
-    <React.Fragment>
+    <Container>
       <Grid container>
         <Grid sx={gridStyle} item xs={12} md={6}>
           <Paper sx={paperStyle} elevation={0}>
@@ -161,8 +147,8 @@ const LandingNew = () => {
           </Box>
         </Grid>
       </Grid>
-    </React.Fragment>
+    </Container>
   );
 };
 
-export default LandingNew;
+export default Landing;
