@@ -7,7 +7,6 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Container from "@mui/material/Container";
 
-import Contact from "../components/Contact";
 // import Container from "../components/Container";
 import Button from "../components/Button";
 import List from "../components/List";
@@ -49,17 +48,6 @@ const listArray = [
 ];
 
 // create an interface for the props
-interface LandingProps {
-  data: Array<{
-    mdGridType: number;
-    title: string;
-    description: string;
-    image: { src: string; alt: string; boolean: boolean };
-    button?: JSX.Element;
-    listComponent?: JSX.Element;
-  }>;
-}
-
 const gridStyle = {
   display: "flex",
   justifyContent: "center",
@@ -107,8 +95,17 @@ const Landing = () => {
             <Button variant="contained" text="Get Started" color="primary" />
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Box sx={{ p: 2, m: 2 }}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: { xs: "center", md: "flex-start" },
+          }}
+        >
+          <Box sx={{ p: 2, m: 2, height: { sm: "50%" }, width: { sm: "50%" } }}>
             <img height="100%" width="100%" src={man} alt={"man"} />
           </Box>
         </Grid>
@@ -141,9 +138,18 @@ const Landing = () => {
             <List data={listArray} />
           </Box>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <Box sx={{ p: 2, m: 2 }}>
-            <img height="100%" width="100%" src={icons} alt={"icons"} />
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: { xs: "center", md: "flex-start" },
+          }}
+        >
+          <Box sx={{ p: 2, m: 2, height: { sm: "50%" }, width: { sm: "50%" } }}>
+            <img height={"100%"} width={"100%"} src={icons} alt={"icons"} />
           </Box>
         </Grid>
       </Grid>
