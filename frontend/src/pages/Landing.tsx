@@ -105,7 +105,14 @@ const Landing = () => {
             alignItems: { xs: "center", md: "flex-start" },
           }}
         >
-          <Box sx={{ p: 2, m: 2, height: { sm: "50%" }, width: { sm: "50%" } }}>
+          <Box
+            sx={{
+              p: 2,
+              m: 2,
+              height: { xs: "50%", sm: "80%", md: "100%" },
+              width: { xs: "50%", sm: "80%", md: "100%" },
+            }}
+          >
             <img height="100%" width="100%" src={man} alt={"man"} />
           </Box>
         </Grid>
@@ -148,7 +155,14 @@ const Landing = () => {
             alignItems: { xs: "center", md: "flex-start" },
           }}
         >
-          <Box sx={{ p: 2, m: 2, height: { sm: "50%" }, width: { sm: "50%" } }}>
+          <Box
+            sx={{
+              p: 2,
+              m: 2,
+              height: { xs: "50%", sm: "80%", md: "100%" },
+              width: { xs: "50%", sm: "80%", md: "100%" },
+            }}
+          >
             <img height={"100%"} width={"100%"} src={icons} alt={"icons"} />
           </Box>
         </Grid>

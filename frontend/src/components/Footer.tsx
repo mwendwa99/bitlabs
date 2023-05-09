@@ -10,7 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body2" color="primary">
       {"Copyright © "}
       <Link color="inherit" href="https://bitlabs.com/">
         BitLabs Technologies
@@ -30,112 +30,63 @@ export default function StickyFooter() {
         flexDirection: "column",
         py: 4,
         mt: "auto",
-        backgroundColor: "#1C1C1C",
+        backgroundColor: "#01244c",
         color: "#fff",
       }}
     >
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: 100,
-                justifyContent: "space-evenly",
-              }}
-            >
-              <Typography align="left" variant="h6" gutterBottom>
-                Address
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-                gutterBottom
-              >
-                BitLabs Technologies
-                <br />
-                Nairobi, Kenya
-                <br />
-                Tel: +254796898480{" "}
-              </Typography>
-              <Stack direction="row" spacing={2}>
-                <FacebookIcon fontSize="small" />
-                <TwitterIcon fontSize="small" />
-                <LinkedInIcon fontSize="small" />
-              </Stack>
-            </Box>
+            <Typography color="primary" align="left" variant="h6" gutterBottom>
+              Address
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              BitLabs Technologies
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Nairobi, Kenya
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Tel: +254796898480{" "}
+            </Typography>
+            <Stack direction="row" spacing={2} sx={{ py: 2 }}>
+              <FacebookIcon fontSize="small" />
+              <TwitterIcon fontSize="small" />
+              <LinkedInIcon fontSize="small" />
+            </Stack>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: 100,
-                justifyContent: "space-evenly",
-              }}
+            <Typography
+              color={"primary"}
+              align="left"
+              variant="h6"
+              gutterBottom
             >
-              <Typography align="left" variant="h6" gutterBottom>
-                Services
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                Web Development
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                Mobile Development
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                Business Intelligence
-              </Typography>
-            </Box>
+              Services
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Web Development
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Mobile Development
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Business Intelligence
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: 100,
-                justifyContent: "space-evenly",
-              }}
-            >
-              <Typography align="left" variant="h6" gutterBottom>
-                Resources
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                Success stories
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                Get in touch
-              </Typography>
-              <Typography
-                align="left"
-                variant="subtitle1"
-                color="text.secondary"
-              >
-                About BitLabs
-              </Typography>
-            </Box>
+            <Typography color="primary" align="left" variant="h6" gutterBottom>
+              Resources
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Success stories
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              Get in touch
+            </Typography>
+            <Typography align="left" variant="subtitle1" color="primary">
+              About BitLabs
+            </Typography>
           </Grid>
           <Grid item xs={12}>
             <Copyright />
