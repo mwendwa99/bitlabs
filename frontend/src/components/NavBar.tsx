@@ -91,9 +91,19 @@ function ResponsiveAppBar() {
                     {
                       // is this the home page?
                       page === "Home" ? (
-                        <RLink to="/">Home</RLink>
+                        <RLink
+                          style={{ textDecoration: "none", color: "#01244c" }}
+                          to="/"
+                        >
+                          Home
+                        </RLink>
                       ) : (
-                        <RLink to={`/${page}`}>{page}</RLink>
+                        <RLink
+                          style={{ textDecoration: "none", color: "#01244c" }}
+                          to={`/${page}`}
+                        >
+                          {page}
+                        </RLink>
                       )
                     }
                   </Typography>
