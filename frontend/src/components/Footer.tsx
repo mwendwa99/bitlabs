@@ -30,10 +30,8 @@ export default function StickyFooter() {
         flexDirection: "column",
         py: 4,
         mt: "auto",
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+        backgroundColor: "#1C1C1C",
+        color: "#fff",
       }}
     >
       <Container maxWidth="lg">
